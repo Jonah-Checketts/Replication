@@ -1,0 +1,620 @@
+*{
+	font-family: Open Sans;
+    margin: 0 auto;
+}
+.animate{
+    height: 25px;
+    width: 25px;
+    background-color: #1177cc;
+    z-index: 2;
+    position: absolute;
+    right: 50px;
+    top: -35px;
+    animation: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+nav{
+	position: absolute;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 1;
+	background-color: #ffffffee;
+	padding-bottom: 40px;
+    animation: slideIn;
+    animation-duration: 2s;
+}
+nav div ul li a{
+	text-decoration: none;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #787878;
+	padding-bottom: 10px;
+}
+nav div ul li{
+	display: inline;
+	text-align: center;
+	white-space: nowrap;
+	height: 50px;
+	padding: 0 2%;
+}
+nav div ul{
+	width: 60%;
+	top: 50px;
+	white-space:nowrap;
+	margin-left: 37%;
+	margin-top: -32px;
+}
+nav div ul li a:hover{
+	border-bottom: 3px solid #1177cc;
+}
+.logo{
+	margin-top: 60px;
+	margin-left: 14%;
+}
+.blueDownArrow{
+	position:absolute;
+	display: inline;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 5px solid #1177cc;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.phoneNum{
+	position: absolute;
+	right: 14%;
+	top: 30px;
+}
+.phoneNum a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	color: #787878;
+}
+.hoverDropDown{
+	padding-bottom: 50px;
+}
+.dropDown{
+	top: 10px;
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	background-color: #cdcdcd99;
+	overflow: hidden;
+	left: 0;
+	z-index:2;
+	margin-top: 30px;
+	transition: 2s;
+	display: none;
+	white-space: normal;
+}
+.hoverDropDown:hover .dropDown{
+	display: block;
+}
+.dropDown:hover{
+	display: block;
+}
+.wrapper{
+	position: absolute;
+	width:100%;
+	left:0;
+}
+.topBackground{
+	background-image:url("https://www.firstcolonymortgage.com/wp-content/uploads/2016/06/Untitled-4-11.jpg");
+	width: 100%;
+	height: 800px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 0;
+}
+.dropList{
+	z-index:2;
+	display: inline-block;
+	padding:0 40px;
+}
+.dropItem{
+	display: inline;
+	margin: 0 120px;
+	float: left;
+	margin-top: 25px;
+}
+.dropItem a{
+	text-decoration: none;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #787878;
+	padding-bottom: 10px;
+}
+.dropItem a:hover{
+	border-bottom: 2px solid #1177cc;
+}
+.reqQuote{
+	position: fixed;
+	right: 0;
+	top: 60%;
+	transform: translate( 0, -75%);
+	height: 200px;
+	width: 60px;
+	background-color: #1177cc;
+    z-index: 2;
+}
+.reqQuote p{
+	transform: rotate(90deg);
+	white-space: nowrap;
+	color: white;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 30px;
+}
+.seeHowButton{
+	height: 60px;
+	width: 190px;
+	background-color: #1177cc;
+	text-align: center;
+	position: absolute;
+	top: 525px;
+	left: 20%;
+	transition: background-color 0.5s;
+}
+.seeHowButton p{
+	color: white;
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+    margin: 15px 0;
+}
+.imgTxtCont{
+	position: absolute;
+	top: 250px;
+	left: 20%;
+}
+strong{
+	color: #787878;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 66px;
+	margin: 0 auto;
+}
+.imgTxtCont h2{
+	color: #787878;
+	text-transform: uppercase;
+	font-size: 66px;
+	font-weight: normal;
+	margin: 0 auto;
+}
+.seeHowButton:hover{
+	background-color: #3399ee;
+	transition: background-color 0.5s;
+}
+.startContainer{
+	background-color: white;
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	z-index: 2;
+}
+.getStarted{
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 26px;
+	color: #787878;
+	padding: 40px 80px;
+}
+.Media1{
+	width: 65%;
+	height: 600px;
+	background-color: white;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	position: absolute;
+	top: 700px;
+}
+.Tools{
+	display: flex;
+	width: 100%;
+	margin: 0 30px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.section{
+	flex: 1;
+	text-align: center;
+	margin-top: 250px;
+	padding: 0 20px;
+}
+#middle{
+	border-right: 2px solid #cdcdcd;
+	border-left: 2px solid #cdcdcd;
+	padding: 0 40px;
+}
+.section h3{
+	font-size: 16px;
+	font-weight: 100;
+	color: #676767;
+}
+.section a{
+	text-decoration: none;
+}
+.toolButton{
+	height: auto;
+	width: 180px;
+	background-color: white;
+	border: 2px solid #1177cc;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: normal;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	margin-top: 50px;
+}
+.toolButton h4{
+	color: #3399ee;
+	margin: 10px 30px;
+}
+#lower{
+	margin-top: 90px;
+}
+#littleLower{
+	margin-top: 70px;
+}
+.toolButton:hover{
+	background-color: #1177cc;
+	transition: 0.5s;
+}
+.toolButton:hover h4{
+	color: white;
+	transition: 0.5s;
+}
+.textSection {
+    width: 100%;
+    height: 450px;
+    margin-top: 1400px;
+    background-image: url("https://www.firstcolonymortgage.com/wp-content/uploads/2016/06/a.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y:center;
+    background-position-x: center;
+    overflow: hidden;
+    margin-right: 0;
+}
+.paragraph1 {
+    position: absolute;
+    top: 1600px;
+    left: 50%;
+    transform: translate(-42%,0);
+    float: left;
+    color: #787878;
+    margin: 0 -8%;
+    line-height: 30px;
+}
+.findYourWay{
+    position: absolute;
+	top: 1500px;
+    left: 50%;
+    transform: translate(-50%,0);
+	text-align: center;
+	font-size: 26px;
+    color: #787878;
+    font-weight: 200;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.headerStrong{
+	font-weight: 900;
+	font-size: 26px;
+}
+.blueText {
+    color: #1177cc;
+    font-weight: 900;
+}
+.miniLogo{
+    display:none;
+}
+.ham{
+    display: none;
+}
+.stats {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.flex {
+    flex: 1;
+    text-align: center;
+    margin-top: 40px;
+}
+.words {
+    text-transform: uppercase;
+    color: #1177cc;
+    font-size: 16px;
+}
+.number {
+    color: #1177cc;
+    font-weight: 900;
+}
+.blueBar {
+    width: 100%;
+    height: 200px;
+    background-color: #1177cc;
+}
+.arrows {
+    color: white;
+    font-size: 52px;
+    letter-spacing: 50px;
+    position: absolute;
+    margin: 60px 15%;
+    font-weight: 900;
+}
+.arrows:hover {
+    cursor: pointer;
+}
+.lastDiv{
+    height: 950px;
+    width: 100%;
+    background-image: url(../images/boards.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    z-index:0;
+    text-align: center;
+}
+.loanTypes{
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 32px;
+    font-weight: 500;
+    position: absolute;
+    top: 2350px;
+    left: 50%;
+    transform: translate(-50%,0);
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+.lineWrapper{
+    width: 100%;
+    height: 3px;
+    text-align: center;
+    position: absolute;
+    top: 2400px;
+}
+.underline {
+    height: 100%;
+    background-color: #1177cc;
+    width: 50px;
+    animation: expand;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.sixFlex{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    top: 2450px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    flex-wrap: wrap;
+}
+.loanTypeDiv{
+    height: 225px;
+    width: auto;
+    background-color: #e5e5e5;
+    margin: 30px;
+    flex:25%;
+}
+.loanTypeDiv h2{
+    text-transform: uppercase;
+    color: #1177cc;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+#not{
+    padding: 5px 0;
+    background-color: #ffffff00;
+}
+#not:hover{
+    background-color: #1177cc;
+}
+footer{
+    height: 350px;
+    background-color: #9a9a9a;
+    width: 100%;
+}
+.circle{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: #1177cc;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 1340px){
+	nav{
+		height: 15px;
+        background-color: #1177cc;
+	}
+    nav ul {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .miniLogo{
+        height: 35px;
+        display: block;
+        z-index: 2;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+    .phoneNum{
+        display: none;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 10px;
+    }
+    .ham a{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+    .ham a:hover{
+        color: #787878;
+    }
+    .loanTypes {
+        top: 2350px;
+    }
+
+    .lineWrapper {
+        top: 2400px;
+    }
+}
+@media only screen and (max-width: 1110px){
+	.startContainer{
+		width: 100%;
+	}
+    .reqQuote {
+        display: none;
+    }
+	.Media1{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 850px;
+	}
+	.Tools{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 200px;
+	}
+	.section{
+		border: none;
+		width: 100%;
+		margin: 30px auto;
+		float: left;
+        text-align: left;
+	}
+    .section h3 {
+        float: left;
+        margin-top: -20px;
+        margin-left: 90px;
+    }
+    .toolButton {
+        margin-top: 10px;
+        float: left;
+        margin-left: 200px;
+    }
+    #mortgageButton {
+        margin-top: 60px;
+    }
+    #littleLower {
+        margin-top: 50px;
+    }
+    #lower{
+        margin-top: 30px;
+    }
+    .section img {
+        position: absolute;
+        left: -50px;
+    }
+	.section a div h4{
+		white-space: normal;
+	} 
+	#middle{
+		border: none;
+	}
+    .textSection{
+        margin-top: 1700px;
+    }
+    .findYourWay {
+        top: 1750px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .headerStrong {
+        font-size: 14px;
+    }
+    .paragraph1{
+        top: 1800px;
+        font-size: 12px;
+        margin: 50px -20%;
+        transform: translate(-30%, 0);
+    }
+    .loanTypes {
+        top: 2650px;
+    }
+
+    .lineWrapper {
+        top: 2700px;
+    }
+    .sixFlex{
+        top: 2750px;
+    }
+    #not{
+        margin-left: 50%;
+        margin-top: 50px;
+        transform: translate(-50%,0);
+    }
+}
+@media only screen and (max-width: 920px){
+    .sixFlex{
+        width: 100%;
+    }
+    .loanTypeDiv{
+        width: 100%;
+        flex: 100%;
+        display: block;
+    }
+    .lastDiv{
+        height: 2050px;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+}
+@media only screen and (max-width: 705px){
+    .stats{
+        display: block;
+        flex-direction: column;
+        height: 650px;
+    }
+    .blueBar{
+        height: 150px;
+    }
+    .arrows{
+        left: -20px;
+        font-size: 24px;
+    }
+    .imgTxtCont{
+        left: 10px;
+    }
+    .seeHowButton{
+        left: 10px;
+    }
+    .loanTypes {
+        top: 3100px;
+    }
+
+    .lineWrapper {
+        top: 3150px;
+    }
+    .sixFlex{
+        top: 3200px;
+    }
+}
